@@ -1,0 +1,10 @@
+{
+    "1": {
+        "name": "Bulbasaur",
+        "generation": "1",
+        "preEvol": "None",
+        "evol": "Ivysaur",
+        "Type1": "Grass",
+        "Type2": "Posion"
+    }
+}
