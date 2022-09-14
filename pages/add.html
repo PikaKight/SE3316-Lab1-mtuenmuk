@@ -5,11 +5,10 @@
         <title>SE 3316 Lab 1</title>
         <meta name="description" content="">
         <meta name="author" content="Marcus Tuen Muk">
-        <link rel="stylesheet" href='../styles/styles.css'>
     </head>
     <body>
         <!-- Place your content here -->
-        <form>
+        <form id="adding">
             <label for="pknmNum">Pokédex Number :</label><br>
             <input type="text" id="pkmnNum"><br>
             <label for="pkmnName">Pokémon Name:</label><br>
@@ -20,11 +19,16 @@
             <input type="text" id="preEvol"><br>
             <label for="evol">Evolution:</label><br>
             <input type="text" id="evol"><br>
+            <label for="type1">Type 1:</label><br>
+            <input type="text" id="type1"><br>
+            <label for="type2">Type 2:</label><br>
+            <input type="text" id="type2"><br>
             <label for="desc">Description:</label><br>
-            <input type="text" id="desc"><br><br>
-            <input type="submit" id="submit">
+            <input type="text" id="desc"><br>
+            <button type="submit" id="submit">Submit</button>
         </form>
-        <script src="../scripts/add.js"></script>
+        
         <!-- Embedded JavaScript go here -->
+        <script type="module" src="../scripts/add.js"></script>
     </body>
 </html>

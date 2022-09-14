@@ -1,0 +1,11 @@
+body{
+    margin: 1%;
+}
+
+.title{
+    text-align: center;    
+}
+
+.search{
+    column-count: 2;
+}

@@ -1,33 +1,34 @@
-const fs = require('fs');
+// const fs = require('browserify-fs');
 
-// let pkmnNum = document.getElementById("pkmnNum");
-// let pkmnName = document.getElementById("pkmnName");
-// let gen = document.getElementById("gen");
-// let preEvol = document.getElementById("preEvol");
-// let evol = document.getElementById("evol");
-// let desc = document.getElementById("desc");
+const form = document.getElementById("adding");
 
-// let pkmn = {
-//     "name": pkmnNum,
-//     "generation": pkmnName,
-//     "preEvol": gen,
-//     "evol": preEvol,
-//     "Type1": evol,
-//     "Type2": desc
-// }
+form.addEventListener('submit', (event) => {
+    alert("hi")
+    
+    let pkmn = {
+        "name": form.elements['pkmnName'],
+        "generation": form.elements['gen'],
+        "preEvol": form.elements['preEvol'],
+        "evol": form.elements['evol'],
+        "Type1": form.elements['type1'],
+        "Type2": form.elements['type2'],
+        "img": `Resources/pkmn_pics/${form.elements['pkmnNum']}.png`
+    }
+    
+})
 
-let pkmn = {
-    "name": "pkmnNum",
-    "generation": "pkmnName",
-    "preEvol": "gen",
-    "evol": "preEvol",
-    "Type1": "evol",
-    "Type2": "desc"
+
+function addPkmn(){
+    
+    // let pkmnData = fs.readFileSync('Resources/pkmn-data/pkmn-data.json', 'utf-8');
+    
+    // let pkmns = JSON.parse(pkmnData)
+    
+    // pkmns[pkmnNum] = pkmn
+    
+    // pkmnData = JSON.stringify(pkmns, null, 4);
+    
+    // fs.writeFileSync('Resources/pkmn-data/pkmn-data.json', pkmnData, 'utf-8')
 }
 
-let pkmnData = fs.readFileSync('Resources/pkmn-data/pkmn-data.json', 'utf-8');
-
-let pkmns = JSON.parse(pkmnData)
-
-
-console.log(pkmnData);
+export {addPkmn}

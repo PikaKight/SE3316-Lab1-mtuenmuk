@@ -5,6 +5,7 @@
         "preEvol": "None",
         "evol": "Ivysaur",
         "Type1": "Grass",
-        "Type2": "Posion"
+        "Type2": "Posion",
+        "img": "Resources/pkmn_pics/1.png"
     }
 }
