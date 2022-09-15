@@ -18,17 +18,3 @@ form.addEventListener('submit', (event) => {
 })
 
 
-function addPkmn(){
-    
-    // let pkmnData = fs.readFileSync('Resources/pkmn-data/pkmn-data.json', 'utf-8');
-    
-    // let pkmns = JSON.parse(pkmnData)
-    
-    // pkmns[pkmnNum] = pkmn
-    
-    // pkmnData = JSON.stringify(pkmns, null, 4);
-    
-    // fs.writeFileSync('Resources/pkmn-data/pkmn-data.json', pkmnData, 'utf-8')
-}
-
-export {addPkmn}
