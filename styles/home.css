@@ -7,5 +7,27 @@ body{
 }
 
 .search{
+    margin: 0 auto;
     column-count: 2;
+    display: block;
 }
+
+.bar{
+    align-content: center;
+}
+
+.pkmn{
+    margin: 0 auto;
+    background-color: #0080FF;
+}
+
+ul{
+    margin: 0 auto;
+    columns: 5;
+}
+
+li{
+    display: inline-block;
+    vertical-align: top;
+}
+
