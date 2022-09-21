@@ -18,12 +18,18 @@ body{
 
 .pkmn{
     margin: 0 auto;
+    width: auto;
+    height: auto;
     background-color: #0080FF;
 }
 
 ul{
     margin: 0 auto;
-    columns: 5;
+    width: auto;
+    height: auto;
+    display: inline grid;
+    grid-column-start: 1;
+    grid-column-end: 5;
 }
 
 li{

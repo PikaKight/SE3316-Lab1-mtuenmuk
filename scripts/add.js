@@ -1,4 +1,3 @@
-// const fs = require('browserify-fs');
 
 const form = document.getElementById("adding");
 

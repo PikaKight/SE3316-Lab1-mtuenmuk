@@ -1,0 +1,50 @@
+[
+    {
+        "num": "001",
+        "name": "Bulbasaur",
+        "gen": "1",
+        "preEvol": "",
+        "evol": "Ivysaur",
+        "mega": "",
+        "type1": "grass",
+        "type2": "posion",
+        "description": "",
+        "img": "../Resources/pkmn_pics/1.png"
+    },
+    {
+        "num": "002",
+        "name": "Ivysaur",
+        "gen": "1",
+        "preEvol": "Bulbasaur",
+        "evol": "Venusaur",
+        "mega": "",
+        "type1": "grass",
+        "type2": "posion",
+        "description": "",
+        "img": "../Resources/pkmn_pics/2.png"
+    },
+    {
+        "num": "003",
+        "name": "Venusaur",
+        "gen": "1",
+        "preEvol": "Ivysaur",
+        "evol": "",
+        "mega": "Mega-Venusaur",
+        "type1": "grass",
+        "type2": "posion",
+        "description": "",
+        "img": "../Resources/pkmn_pics/3.png"
+    },
+    {
+        "num": "004",
+        "name": "Charmander",
+        "gen": "1",
+        "preEvol": "",
+        "evol": "Charmeleon",
+        "mega": "",
+        "type1": "fire",
+        "type2": "",
+        "description": "",
+        "img": "../Resources/pkmn_pics/4.png"
+    }
+]
