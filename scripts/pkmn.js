@@ -5,17 +5,32 @@ fetch("../Resources/pkmn-data/pkmnData.json")
 .then(response => response.json())
 .then(pkmnData => {
     pkmnData.forEach(pkmn => {
-        console.log(pkmn)
         let li = document.createElement('li');
-        // let btm = document.createElement('button');
-        // btm.setAttribute("styl;e", `background: url(../Resources/pkmn_pics/1.png)`);
-        // li.appendChild(btm);
+
+        let pkmnBox = document.createElement('dev');
+        pkmnBox.setAttribute("class", "pkmnBox");
+
+        let pkmnImg = document.createElement('dev');
+        pkmnImg.setAttribute("class", "pkmnImg");
+        
         let img = document.createElement('img');
         img.src = `${pkmn.img}`
-        li.appendChild(img);
+        pkmnImg.appendChild(img)
+
+        pkmnBox.appendChild(pkmnImg)
+
+        let pkmnInfor = document.createElement('dev');
+        pkmnInfor.setAttribute("class", "pkmnInfor");
+        let info = document.createElement('span');
+        info.innerHTML = pkmn.name
+        pkmnInfor.appendChild(info)
+
+
+        pkmnBox.appendChild(pkmnInfor)
+
+        li.appendChild(pkmnBox)
         li.setAttribute("id", (pkmn.num%10  - 1));
         pkmnList.appendChild(li);
-        // console.log(li.id)
     });
 });
 
