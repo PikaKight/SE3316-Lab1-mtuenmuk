@@ -6,9 +6,8 @@
         "preEvol": "",
         "evol": "Ivysaur",
         "mega": "",
-        "type1": "grass",
-        "type2": "posion",
-        "description": "",
+        "type1": "Grass",
+        "type2": "Posion",
         "img": "../Resources/pkmn/1.png"
     },
     {
@@ -18,9 +17,8 @@
         "preEvol": "Bulbasaur",
         "evol": "Venusaur",
         "mega": "",
-        "type1": "grass",
-        "type2": "posion",
-        "description": "",
+        "type1": "Grass",
+        "type2": "Posion",
         "img": "../Resources/pkmn/2.png"
     },
     {
@@ -30,9 +28,8 @@
         "preEvol": "Ivysaur",
         "evol": "",
         "mega": "Mega-Venusaur",
-        "type1": "grass",
-        "type2": "posion",
-        "description": "",
+        "type1": "Grass",
+        "type2": "Posion",
         "img": "../Resources/pkmn/3.png"
     },
     {
@@ -42,10 +39,185 @@
         "preEvol": "",
         "evol": "Charmeleon",
         "mega": "",
-        "type1": "fire",
+        "type1": "Fire",
         "type2": "",
-        "description": "",
         "img": "../Resources/pkmn/4.png"
+    },
+    {
+        "num": "005",
+        "name": "Charmeleon",
+        "gen": "1",
+        "preEvol": "Charmander",
+        "evol": "Charizard",
+        "mega": "",
+        "type1": "Fire",
+        "type2": "",
+        "img": "../Resources/pkmn/5.png"
+    },
+    {
+        "num": "006",
+        "name": "Charizard",
+        "gen": "1",
+        "preEvol": "Charmeleon",
+        "evol": "",
+        "mega": "",
+        "type1": "Fire",
+        "type2": "Flying",
+        "img": "../Resources/pkmn/6.png"
+    },
+    {
+        "num": "007",
+        "name": "Squirtle",
+        "gen": "1",
+        "preEvol": "",
+        "evol": "Wartortle",
+        "mega": "",
+        "type1": "Water",
+        "type2": "",
+        "img": "../Resources/pkmn/7.png"
+    },
+    {
+        "num": "008",
+        "name": "Wartortle",
+        "gen": "1",
+        "preEvol": "Squirtle",
+        "evol": "Blastoise",
+        "mega": "",
+        "type1": "Water",
+        "type2": "",
+        "img": "../Resources/pkmn/8.png"
+    },
+    {
+        "num": "009",
+        "name": "Blastoise",
+        "gen": "1",
+        "preEvol": "Wartortle",
+        "evol": "",
+        "mega": "",
+        "type1": "Water",
+        "type2": "",
+        "img": "../Resources/pkmn/9.png"
+    },
+    {
+        "num": "010",
+        "name": "Caterpie",
+        "gen": "1",
+        "preEvol": "",
+        "evol": "Metapod",
+        "mega": "",
+        "type1": "Bug",
+        "type2": "",
+        "img": "../Resources/pkmn/10.png"
+    },
+    {
+        "num": "011",
+        "name": "Metapod",
+        "gen": "1",
+        "preEvol": "Caterpie",
+        "evol": "Butterfree",
+        "mega": "",
+        "type1": "Bug",
+        "type2": "",
+        "img": "../Resources/pkmn/11.png"
+    },
+    {
+        "num": "012",
+        "name": "Butterfree",
+        "gen": "1",
+        "preEvol": "Metapod",
+        "evol": "",
+        "mega": "",
+        "type1": "Bug",
+        "type2": "",
+        "img": "../Resources/pkmn/12.png"
+    },
+    {
+        "num": "013",
+        "name": "Weedle",
+        "gen": "1",
+        "preEvol": "",
+        "evol": "Kakuna",
+        "mega": "",
+        "type1": "Bug",
+        "type2": "Posion",
+        "img": "../Resources/pkmn/13.png"
+    },
+    {
+        "num": "014",
+        "name": "Kakuna",
+        "gen": "1",
+        "preEvol": "Weedle",
+        "evol": "Beedrill",
+        "mega": "",
+        "type1": "Bug",
+        "type2": "Posion",
+        "img": "../Resources/pkmn/14.png"
+    },
+    {
+        "num": "015",
+        "name": "Beedrill",
+        "gen": "1",
+        "preEvol": "Kakuna",
+        "evol": "",
+        "mega": "",
+        "type1": "Bug",
+        "type2": "Posion",
+        "img": "../Resources/pkmn/15.png"
+    },
+    {
+        "num": "016",
+        "name": "Pidgey",
+        "gen": "1",
+        "preEvol": "",
+        "evol": "Pidgeotto",
+        "mega": "",
+        "type1": "Normal",
+        "type2": "Flying",
+        "img": "../Resources/pkmn/16.png"
+    },
+    {
+        "num": "017",
+        "name": "Pidgeotto",
+        "gen": "1",
+        "preEvol": "Pidgey",
+        "evol": "Pidgeot",
+        "mega": "",
+        "type1": "Normal",
+        "type2": "Flying",
+        "img": "../Resources/pkmn/17.png"
+    },
+    {
+        "num": "018",
+        "name": "Pidgeot",
+        "gen": "1",
+        "preEvol": "Pidgeotto",
+        "evol": "",
+        "mega": "",
+        "type1": "Normal",
+        "type2": "Flying",
+        "img": "../Resources/pkmn/18.png"
+    },
+    {
+        "num": "019",
+        "name": "Rattata",
+        "gen": "1",
+        "preEvol": "",
+        "evol": "Raticate",
+        "mega": "",
+        "type1": "Normal",
+        "type2": "",
+        "img": "../Resources/pkmn/19.png"
+    },
+    {
+        "num": "020",
+        "name": "Raticate",
+        "gen": "1",
+        "preEvol": "Rattata",
+        "evol": "",
+        "mega": "",
+        "type1": "Normal",
+        "type2": "",
+        "img": "../Resources/pkmn/20.png"
     }
 ]
 

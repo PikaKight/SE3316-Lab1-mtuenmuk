@@ -23,13 +23,18 @@ fetch("../Resources/pkmn-data/pkmnData.json")
         let pkmnInfor = document.createElement('dev');
         pkmnInfor.setAttribute("class", "pkmnInfor");
         
-        let info = document.createElement('span');
-        info.innerHTML = pkmn.name
-        pkmnInfor.appendChild(info)
+        let l1 = document.createElement('span');
+        l1.setAttribute("id", (pkmn.num%10) )
+        l1.innerHTML = `${pkmn.num} ${pkmn.name}`
+        pkmnInfor.appendChild(l1)
         
-        let btm = document.createElement('button');
-        btm.setAttribute("id", (pkmn.num%10) )
-        pkmnInfor.appendChild(btm)
+        let br = document.createElement('br');
+        pkmnInfor.appendChild(br)
+        
+        let l2 = document.createElement('span');
+        l2.setAttribute("id", (pkmn.num%10) )
+        l2.innerHTML = `${pkmn.type1} ${pkmn.type2}`
+        pkmnInfor.appendChild(l2)
 
         pkmnBox.appendChild(pkmnInfor)
 
