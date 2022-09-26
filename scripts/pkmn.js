@@ -7,18 +7,24 @@ fetch("../Resources/pkmn-data/pkmnData.json")
     pkmnData.forEach(pkmn => {
         const pkmnNum = document.getElementById("pkmnNum");
 
+        if (!(document.querySelector(`option[value = "${pkmn.num}"]`) == null)){
+            throw new Error('already exist');
+            return
+        }
+
         let opt = document.createElement('option');
         opt.value = pkmn.num
         opt.innerHTML = pkmn.num
 
         pkmnNum.appendChild(opt)
+        
 
         let li = document.createElement('li');
 
-        let pkmnBox = document.createElement('dev');
+        let pkmnBox = document.createElement('div');
         pkmnBox.setAttribute("class", "pkmnBox");
 
-        let pkmnImg = document.createElement('dev');
+        let pkmnImg = document.createElement('div');
         pkmnImg.setAttribute("class", "pkmnImg");
         
         let img = document.createElement('img');
@@ -28,11 +34,11 @@ fetch("../Resources/pkmn-data/pkmnData.json")
 
         pkmnBox.appendChild(pkmnImg)
         
-        let pkmnInfor = document.createElement('dev');
+        let pkmnInfor = document.createElement('div');
         pkmnInfor.setAttribute("class", "pkmnInfor");
         
         let l1 = document.createElement('span');
-        l1.setAttribute("id", (pkmn.num%10) )
+        l1.setAttribute("id", (pkmn.num) )
         l1.innerHTML = `${pkmn.num} ${pkmn.name}`
         pkmnInfor.appendChild(l1)
         
@@ -40,17 +46,20 @@ fetch("../Resources/pkmn-data/pkmnData.json")
         pkmnInfor.appendChild(br)
         
         let l2 = document.createElement('span');
-        l2.setAttribute("id", (pkmn.num%10) )
+        l2.setAttribute("class", "types" )
         l2.innerHTML = `${pkmn.type1} ${pkmn.type2}`
         pkmnInfor.appendChild(l2)
 
         pkmnBox.appendChild(pkmnInfor)
 
         li.appendChild(pkmnBox)
-        li.setAttribute("id", (pkmn.num%10  - 1));
+        li.setAttribute("id", (pkmn.num));
+        li.setAttribute("name", (pkmn.name));
         pkmnList.appendChild(li);
     });
-});
+    return pkmnData
+})
+.catch(error => console.log(error));
 
 let searchByName = document.getElementById("pkmnName");
 let searchByNum  = document.getElementById("pkmnNum");
@@ -59,14 +68,16 @@ searchByName.addEventListener("keydown", e => {
     
     if (e.keyCode === 13){
         const value = e.target.value;
-        console.log(value)
+        let li = document.querySelector(`li[name=${value}]`) 
+        
+        
+        let num = parseInt(li.getAttribute("id")) + 1;
+        let name = li.getAttribute("name");  
+        
+        let types = li.getElementsByClassName("pkmnBox").item(0).getElementsByClassName("pkmnInfor").item(0).getElementsByClassName("types").item(0).innerHTML
+        
+        alert(`Number: #${num}\nName: ${name}\nTypes: ${types}`)
+        }
     }
-    
-})
-
-
-
-
-
-
+);
 

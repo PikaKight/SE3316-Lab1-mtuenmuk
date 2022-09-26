@@ -10,27 +10,30 @@
     </head>
     <body>
         <!-- Place your content here -->
-        <h1 class="title">Marcus Tuen Muk's Pokédex</h1>
-        <div class="search">
-            <input class="bar" id="pkmnName" placeholder="Search Pokémon Name" type="search" maxlength="20">
-            <select id="pkmnNum" aria-placeholder="Search Pokémon Num">
-
-            </select>
+        <div class="container">
+            <h1 class="title">Marcus Tuen Muk's Pokédex</h1>
+            <div class="search">
+                <input class="bar" id="pkmnName" placeholder="Search Pokémon Name" type="search" maxlength="20">
+                <select id="pkmnNum" aria-placeholder="Search Pokémon Num">
+    
+                </select>
+            </div>
+            <section class="pkmn">
+                <ul id="pkmnList">
+                    
+                </ul>
+            </section>
+            <footer class="footer">
+                <p>
+                    Reference:
+                    <br>
+                    Pokemon data set from :<a href="https://www.kaggle.com/kvpratama/pokemon-images-dataset">https://www.kaggle.com/kvpratama/pokemon-images-dataset</a>
+                    <br>
+                    Pokemon excel from: <a href="https://www.reddit.com/r/TheSilphRoad/comments/7p952h/pokemon_go_pokedex_spreadsheet/">https://www.reddit.com/r/TheSilphRoad/comments/7p952h/pokemon_go_pokedex_spreadsheet/</a>
+                </p>
+            </footer>
         </div>
-        <section class="pkmn">
-            <ul id="pkmnList">
-                
-            </ul>
-        </section>
-        <div class="footer">
-            <p>
-                Reference:
-                <br>
-                Pokemon data set from :<a href="https://www.kaggle.com/kvpratama/pokemon-images-dataset">https://www.kaggle.com/kvpratama/pokemon-images-dataset</a>
-                <br>
-                Pokemon excel from: <a href="https://www.reddit.com/r/TheSilphRoad/comments/7p952h/pokemon_go_pokedex_spreadsheet/">https://www.reddit.com/r/TheSilphRoad/comments/7p952h/pokemon_go_pokedex_spreadsheet/</a>
-            </p>
-        </div>
+        
         <!-- Embedded JavaScript go here -->
         <script type="text/JavaScript" src="../Resources/pkmn-data/pkmnData.json"></script>
         <script type="module" src="../scripts/pkmn.js"></script>
