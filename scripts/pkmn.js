@@ -62,7 +62,7 @@ fetch("../Resources/pkmn-data/pkmnData.json")
 .catch(error => console.log(error));
 
 let searchByName = document.getElementById("pkmnName");
-let searchByNum  = document.getElementById("pkmnNum");
+
 
 searchByName.addEventListener("keydown", e => {
     
@@ -71,7 +71,7 @@ searchByName.addEventListener("keydown", e => {
         let li = document.querySelector(`li[name=${value}]`) 
         
         
-        let num = parseInt(li.getAttribute("id")) + 1;
+        let num = parseInt(li.getAttribute("id"));
         let name = li.getAttribute("name");  
         
         let types = li.getElementsByClassName("pkmnBox").item(0).getElementsByClassName("pkmnInfor").item(0).getElementsByClassName("types").item(0).innerHTML
@@ -81,3 +81,21 @@ searchByName.addEventListener("keydown", e => {
     }
 );
 
+let searchByNum  = document.getElementById("pkmnNum");
+const btn = document.getElementById("selectNum");
+
+btn.addEventListener("click", e => {
+    
+    const value = searchByNum.value;
+    
+    let li = document.getElementById(value) 
+        
+        
+    let num = parseInt(li.getAttribute("id"));
+    let name = li.getAttribute("name");  
+        
+    let types = li.getElementsByClassName("pkmnBox").item(0).getElementsByClassName("pkmnInfor").item(0).getElementsByClassName("types").item(0).innerHTML
+        
+    alert(`Number: #${num}\nName: ${name}\nTypes: ${types}`)
+    }
+);
