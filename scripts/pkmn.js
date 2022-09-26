@@ -5,6 +5,14 @@ fetch("../Resources/pkmn-data/pkmnData.json")
 .then(response => response.json())
 .then(pkmnData => {
     pkmnData.forEach(pkmn => {
+        const pkmnNum = document.getElementById("pkmnNum");
+
+        let opt = document.createElement('option');
+        opt.value = pkmn.num
+        opt.innerHTML = pkmn.num
+
+        pkmnNum.appendChild(opt)
+
         let li = document.createElement('li');
 
         let pkmnBox = document.createElement('dev');
@@ -43,6 +51,21 @@ fetch("../Resources/pkmn-data/pkmnData.json")
         pkmnList.appendChild(li);
     });
 });
+
+let searchByName = document.getElementById("pkmnName");
+let searchByNum  = document.getElementById("pkmnNum");
+
+searchByName.addEventListener("keydown", e => {
+    
+    if (e.keyCode === 13){
+        const value = e.target.value;
+        console.log(value)
+    }
+    
+})
+
+
+
 
 
 

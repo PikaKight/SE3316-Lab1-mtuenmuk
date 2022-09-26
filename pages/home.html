@@ -12,10 +12,10 @@
         <!-- Place your content here -->
         <h1 class="title">Marcus Tuen Muk's Pokédex</h1>
         <div class="search">
-            <input class="bar" name="pkmnName" placeholder="Search Pokémon Name">
-            <button>Submit</button>
-            <input class="bar" name="pknmNum" placeholder="Search Pokémon Number">
-            <button>Submit</button>
+            <input class="bar" id="pkmnName" placeholder="Search Pokémon Name" type="search" maxlength="20">
+            <select id="pkmnNum" aria-placeholder="Search Pokémon Num">
+
+            </select>
         </div>
         <section class="pkmn">
             <ul id="pkmnList">
@@ -34,5 +34,6 @@
         <!-- Embedded JavaScript go here -->
         <script type="text/JavaScript" src="../Resources/pkmn-data/pkmnData.json"></script>
         <script type="module" src="../scripts/pkmn.js"></script>
+        <script type="text/JavaScript" src="../scripts/pkmn.js"></script>
     </body>
 </html>
