@@ -111,7 +111,7 @@ btn.addEventListener("click", e => {
         
         
     let num = parseInt(li.getAttribute("id"));
-    let name = li.getAttribute("name");  
+    let name = li.getAttribute("class");  
         
     let types = li.getElementsByClassName("pkmnBox").item(0).getElementsByClassName("pkmnInfor").item(0).getElementsByClassName("types").item(0).innerHTML
         
