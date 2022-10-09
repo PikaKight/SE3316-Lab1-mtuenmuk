@@ -118,17 +118,21 @@ let searchByNum  = document.getElementById("pkmnNum");
 const btn = document.getElementById("selectNum");
 
 btn.addEventListener("click", e => {
-    
     const value = searchByNum.value;
+
+    let resultList = document.getElementById("resultList");
     
-    let li = document.getElementById(value) 
-        
-        
-    let num = parseInt(li.getAttribute("id"));
-    let name = li.getAttribute("class");  
-        
-    let types = li.getElementsByClassName("pkmnBox").item(0).getElementsByClassName("pkmnInfor").item(0).getElementsByClassName("types").item(0).innerHTML
-        
-    alert(`Number: #${num}\nName: ${name}\nTypes: ${types}`)
+    let results = resultList.childNodes;
+
+    for (var i=1; i < results.length; i++){
+        let num = results[i].id;
+        const isResult = num == value
+        if (isResult){
+            results[i].style.display = "inline-block";
+            }
+        else{
+            results[i].style.display = 'none';
+            }
+        };
     }
 );
