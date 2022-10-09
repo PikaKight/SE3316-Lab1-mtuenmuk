@@ -92,6 +92,13 @@ searchByName.addEventListener("input", e => {
 
     for (var i=1; i < results.length; i++){
         let name = results[i].className.toLocaleLowerCase();
+        const isResult = name.includes(value)
+        if (isResult){
+            console.log("show")
+            }
+        else{
+            console.log("hide")
+            }
         };
     }
 
