@@ -94,10 +94,10 @@ searchByName.addEventListener("input", e => {
         let name = results[i].className.toLocaleLowerCase();
         const isResult = name.includes(value)
         if (isResult){
-            console.log("show")
+            results[i].style.display = "relative";
             }
         else{
-            console.log("hide")
+            results[i].style.display = 'none';
             }
         };
     }
