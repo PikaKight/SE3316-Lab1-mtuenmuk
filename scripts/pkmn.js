@@ -75,35 +75,18 @@ let searchByName = document.getElementById("pkmnName");
 
 searchByName.addEventListener("input", e => {
     
-    const value = e.target.value;
-    let lis = document.querySelectorAll('li') 
-    let results = 0
-    let lisResults = []
+    const value = e.target.value.toLocaleLowerCase()
 
-    lis.forEach(li => {
-        if (li.className.toLocaleLowerCase().includes(value) && results <= 5){
-            let num = parseInt(li.getAttribute("id"));
-            let name = li.getAttribute("class");  
-            
-            let types = li.getElementsByClassName("pkmnBox").item(0).getElementsByClassName("pkmnInfor").item(0).getElementsByClassName("types").item(0).innerHTML
-            
-            lisResults.push(`Number: #${num}\nName: ${name}\nTypes: ${types}\n\n`)
-            
-            results += 1;         
-        }
-    })
+    let resultList = document.getElementById("resultList");
+    let pkmnList = document.querySelector("#pkmnList").childNodes;
 
-    lisResults.toString();
-    if (lisResults.length == 0){
-        alert("No result found");
-        return
-    }
-
-    alert(lisResults);
-
-
-
-        
+    for (var i=1; i < pkmnList.length; i++){
+        if (resultList.childElementCount < 20){
+            let newList = pkmnList[i].cloneNode(true);
+            newList.style.display = "none";
+            resultList.appendChild(newList);
+            }
+        };
     }
 );
 
