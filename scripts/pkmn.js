@@ -136,3 +136,16 @@ btn.addEventListener("click", e => {
         };
     }
 );
+
+let reset = document.getElementById("reset");
+
+reset.addEventListener("click", e => {
+
+    let resultList = document.getElementById("resultList");
+    
+    let results = resultList.childNodes;
+    
+    for (var i=1; i < results.length; i++){
+        results[i].style.display = 'none';
+    };
+})
