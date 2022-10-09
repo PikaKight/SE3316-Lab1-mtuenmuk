@@ -87,7 +87,14 @@ searchByName.addEventListener("input", e => {
             resultList.appendChild(newList);
             }
         };
+    
+    let results = resultList.childNodes;
+
+    for (var i=1; i < results.length; i++){
+        let name = results[i].className.toLocaleLowerCase();
+        };
     }
+
 );
 
 let searchByNum  = document.getElementById("pkmnNum");
