@@ -94,7 +94,7 @@ searchByName.addEventListener("input", e => {
         let name = results[i].className.toLocaleLowerCase();
         const isResult = name.includes(value)
         if (isResult){
-            results[i].style.display = "relative";
+            results[i].style.display = "inline-block";
             }
         else{
             results[i].style.display = 'none';
