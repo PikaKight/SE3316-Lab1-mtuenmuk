@@ -100,8 +100,13 @@ searchByName.addEventListener("input", e => {
             results[i].style.display = 'none';
             }
         };
-    }
 
+    if (value == ''){
+        for (var i=1; i < results.length; i++){
+            results[i].style.display = 'none';
+            };
+        }
+    }
 );
 
 let searchByNum  = document.getElementById("pkmnNum");
