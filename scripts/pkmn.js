@@ -126,8 +126,7 @@ btn.addEventListener("click", e => {
 
     for (var i=1; i < results.length; i++){
         let num = results[i].id;
-        const isResult = num == value
-        if (isResult){
+        if (num == value){
             results[i].style.display = "inline-block";
             }
         else{
@@ -144,8 +143,10 @@ reset.addEventListener("click", e => {
     let resultList = document.getElementById("resultList");
     
     let results = resultList.childNodes;
-    
+
     for (var i=1; i < results.length; i++){
         results[i].style.display = 'none';
     };
+
+    searchByNum.value = "001";
 })
